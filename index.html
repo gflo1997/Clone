@@ -8,55 +8,52 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section id="header">
+    <section id="landing">
       <nav>
-        <div class="logo__top">
-          <img class="img__logo" src="./Assets/logo.2c489fc4.svg" alt="" />
-          <ul>
-            <li><a href="" class="treact">Treact</a></li>
-          </ul>
-        </div>
-        <ul class="middle__list">
-          <li><a href="">About</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Pricing</a></li>
-          <li><a href="">Contact Us</a></li>
-        </ul>
+        <a class="Treact" href="#">
+          <img class="logo" src="./Assets/logo.2c489fc4.svg" alt="" />
+          Treact
+        </a>
         <ul>
-          <li><a href="">Login</a></li>
-          <li><a href="" class="signup_button">Sign Up</a></li>
+          <li><a href="#" class="nav__link">About</a></li>
+          <li><a href="#" class="nav__link">Blog</a></li>
+          <li><a href="#" class="nav__link">Pricing</a></li>
+          <li><a href="#" class="nav__link">Contact Us</a></li>
+          <li><a href="#" class="nav__link nav__link--login">Login</a></li>
+          <li><a href="#" class="nav__link nav__link--signup">Sign Up</a></li>
         </ul>
       </nav>
 
-      <header>
+      <div class="header__container">
         <div class="row">
-          <div class="header__container">
-            <div class="header__description">
-              <h1 class="header__title">
-                Beautiful React Templates <span class="purple">for you.</span>
-              </h1>
-              <h2 class="subheader">
-                Our templates are easy to setup, understand and customize. Fully
-                modular components with a variety of pages and components.
-              </h2>
-              <input type="email" placeholder="Your email address" />Get Started
-              <p class="customers_description">OUR TRUSTED CUSTOMERS</p>
-              <img
-                class="customers_logostrip"
-                src="./Assets/customers-logo-strip.680ac7c2.png"
-                alt=""
-              />
+          <div class="left__column">
+            <h1 class="Header__title">
+              Beautiful React Templates <span class="purple">for you.</span>
+            </h1>
+            <h2 class="header__title--description">
+              Our templates are easy to setup, understand and customize. Fully
+              modular components with a variety of pages and components.
+            </h2>
+            <div class="email__input">
+              <input type="email" placeholder="Your E-mail Address" />
+              <button>Get Started</button>
             </div>
-            <div class="header__img">
-              <figure class="figure">
-                <img src="./Assets/design-illustration-2.6da6a00b.svg" alt="" />
-              </figure>
+            <div class="customers">
+              <p>Our TRUSTED Customers</p>
+              <img src="./Assets/customers-logo-strip.680ac7c2.png" alt="" />
             </div>
           </div>
+          <div class="right__column">
+            <figure>
+              <img
+                class="illustration"
+                src="./Assets/design-illustration-2.6da6a00b.svg"
+                alt=""
+              />
+            </figure>
+          </div>
         </div>
-      </header>
+      </div>
     </section>
-
-    <section></section>
   </body>
 </html>

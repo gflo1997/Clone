@@ -1,36 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
+
+html {-webkit-text-size-adjust: 100%;}
 
 nav {
     display: flex;
     justify-content: space-between;
-    height: 100px;
     align-items: center;
-    margin: 10px 16px;
+    margin: 0 36px;
+    height: 150px;
+    max-width: 1300px;
     width: 100%;
-}
-
-.img__logo {
-    width: 60px;
-}
-
-.logo__top {
-    display: flex;
-    align-items: center;
+    margin-left: auto;
     margin-right: auto;
 }
 
-.treact {
-    font-size: 35px;
-    color: black;
-    opacity: 1;
-    font-weight: 900;
+.logo {
+    height: 60px;
+    margin-right: 0.75rem;
+}
+
+.purple {
+   color: rgba(100,21,255)
 }
 
 ul {
@@ -39,79 +36,109 @@ ul {
 
 li {
     list-style: none;
-    padding: 16px;
-}
-
-.middle__list {
-    margin-right: 2rem;
+    margin-left: 4rem;
 }
 
 a {
     text-decoration: none;
-    color: black;
-    opacity: 0.7;
-    font-size: 20px;
-    max-width: 100%;
-    font-weight: bold;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: gray;
+    cursor: pointer;
 }
 
-.signup_button {
-    background-color: rgb(58, 5, 165);
-    color: white;
-    padding: 8px 16px;
-    border-radius: 50px;
-}
-
-.purple {
-    color: rgb(58, 5, 165);
-}
-
-.row {
-    width: 100%;
-    max-width: 1200px;
-    align-items: center;
-    justify-content: center;
-
-}
-
-/* HEADER */
-
-header {
-    height: calc(100vh-100px);
-    padding: 36px;
+.Treact {
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-left: 0px !important;
+    margin: 0 1.5rem;
+    font-size: 2rem;
+    color: black;
+    letter-spacing: 0.025em;
 }
 
-.header__title {
-    font-size: 80px;
+.nav__link--login {
+    font-weight: 1200;
+    margin-left: 3rem;
 }
 
-.subheader {
-    margin: 36px 0;
-    font-weight: 100;
-    font-size: 30px;
-}
-
-.customers_description {
-    margin: 64px 16px 0 0;
-    opacity: 0.5;
-    width: 40%;
-}
-
-.customers_logostrip {
-    width: 600px;
-    margin-top: 16px;
-    opacity: 0.5;
+.nav__link--signup, button {
+    background-color: rgba(100,21,255);
+    padding: 16px 40px;
+    border-radius: 30px;
+    color: white;
 }
 
 .header__container {
-    display: flex;
+    position: relative;
+    display: block;
 }
 
-.header__img {
+.row {
+    display: flex;
+    align-items: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    max-width: 1300px;
+    width: 100%;
+        margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.left__column {
+    width: 40%;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.right__column {
     width: 60%;
-    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    
+}
+
+.illustration {
+    min-width: 0;
+    width: 100%;
+    height: auto;
+    margin-left: 3rem;
+}
+
+.Header__title {
+    font-size: 2.8rem;
+}
+
+.header__title--description {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+}
+
+button {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.email__input {
+    padding: 8px 10px 8px 24px;
+    border-radius: 60px;
+    border-width: 2px;
+    max-width: 600;
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, .4)
+}
+
+input {
+    border: none;
+    font-size: 1.4rem;
+    text-decoration: none;
+    outline: none;
 }
 
