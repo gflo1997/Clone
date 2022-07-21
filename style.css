@@ -1,23 +1,36 @@
-.row {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+    height: 100px;
     align-items: center;
+    margin: 10px 16px;
+    width: 100%;
 }
 
-.nav__container {
-    width: 100%;
-    max-width: 1200px;
-    padding: 0 24px;
-    align-items: center;
+.img__logo {
+    width: 60px;
+}
+
+.logo__top {
     display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
+    align-items: center;
+    margin-right: auto;
+}
+
+.treact {
+    font-size: 35px;
+    color: black;
+    opacity: 1;
+    font-weight: 900;
 }
 
 ul {
@@ -25,138 +38,80 @@ ul {
 }
 
 li {
-    list-style-type: none;
+    list-style: none;
+    padding: 16px;
+}
+
+.middle__list {
+    margin-right: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+    font-size: 20px;
+    max-width: 100%;
+    font-weight: bold;
+}
+
+.signup_button {
+    background-color: rgb(58, 5, 165);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 50px;
 }
 
 .purple {
-    color: #7342d6;
+    color: rgb(58, 5, 165);
 }
 
-.header__top--left {
-    display: flex;
+.row {
+    width: 100%;
+    max-width: 1200px;
     align-items: center;
-}
+    justify-content: center;
 
-.main__logo {
-    width: 2.5rem;
-    margin-right: 0.75rem;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.header__middle--links {
-    display: flex;
-}
-
-.links {
-    margin-left: 16px;
-    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-    font-size: 1.125rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-    letter-spacing: 0.025em;
-    transition-duration: 300ms;
-    padding-bottom: 0.25rem;
-    border-bottom-width: 2px;
-    border-color: transparent;
-}
-
-.nav__link {
-    margin-left: 1.5rem;
-    text-decoration: none;
-}
-
-.nav__link--signup {
-    padding: 0.75rem 2rem;
-    border-radius: 2rem;
-    --tw-bg-opacity: 1;
-    background-color: rgba(100,21,255,var(--tw-bg-opacity));
-    --tw-text-opacity: 1;
-    color: rgba(247,250,252,var(--tw-text-opacity));
-    border-bottom-width: 0px;
-}
-
-.main__title {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    font-weight: 900;
-    border-bottom-width: 0px;
-    font-size: 1.5rem;
-    margin-left: 0px;
 }
 
 /* HEADER */
 
-.home__description {
+header {
+    height: calc(100vh-100px);
+    padding: 36px;
     display: flex;
-    
-}
-
-.description {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
+    align-items: center;
     justify-content: center;
 }
 
-.illustration__img {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
+.header__title {
+    font-size: 80px;
 }
 
-.customers {
+.subheader {
+    margin: 36px 0;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.customers_description {
+    margin: 64px 16px 0 0;
     opacity: 0.5;
-    justify-content: center;
-    margin-top: 5rem;
-    display: block;
-    
+    width: 40%;
 }
 
-/* FEATURES */
-
-.features__container {
-    padding: 80px 0;
-    position: relative
+.customers_logostrip {
+    width: 600px;
+    margin-top: 16px;
+    opacity: 0.5;
 }
 
-.features__title {
+.header__container {
     display: flex;
-    flex-flow: column wrap;
-    align-items: center;
 }
 
-.services {
-    display: flex;
-    flex-wrap: wrap;
+.header__img {
+    width: 60%;
+    margin-right: 100px;
 }
 
-.service {
-    width: calc(100%/3);
-    align-items: center;
-    max-width: 24rem;
-
-    
-}
-
-.service__title {
-    display: flex;
-    flex-direction: column;
-    margin-left: 1rem;
-    margin-top: 0.5rem;
-    font-weight: ;
-}
-
-.image__container {
-
-}
-
-.description {
-    display: flex;
-    justify-content: center;    
-}
