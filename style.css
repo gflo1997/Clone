@@ -75,6 +75,7 @@ ul {
 
 .columns {
     display: flex;
+    margin-bottom: 100px;
 }
 
 .left__column {
@@ -178,6 +179,7 @@ h2 {
 .services {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 200px;
 }
 
 .service {
@@ -216,3 +218,86 @@ h2 {
     max-height: 60%;
 }
 
+/* QUALITY WORK */
+
+.qualityWork__leftColumn {
+    width: 50%;
+    margin-right: 36px;
+}
+
+.learnMoreButton {
+    padding: 16px 36px;
+    background-color: rgba(100,21,255);
+    border-radius: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.qualityWork__rightColumn {
+    width: 50%;
+    margin-right: 36px;
+}
+
+.qualityWorkImg {
+    width: 100%;
+}
+
+.qualityWork__wrapper {
+    display: flex;
+    margin-bottom: 100px;
+    align-items: center;
+}
+
+/* STEPS */
+
+.steps__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 100px;
+    align-items: center;
+}
+
+.stepLi {
+    display: flex;
+    margin-top: 16px;
+}
+
+.number {
+    font-size: 60px;
+    color: #707a88;
+}
+
+.stepDescription {
+    margin-left: 40px;
+}
+
+.stepTitle {
+    font-size: 30px;
+}
+
+.stepPara {
+    font-size: 20px;
+    line-height: 2.5rem;
+}
+
+.stepUl {
+    display: flex;
+    flex-direction: column;
+}
+
+/* VALUES */
+
+.values__wrapper {
+    display: flex;
+    margin-top: 45px;
+}
+
+.valueTitle {
+    display: flex;
+    align-items: center;
+}
+
+svg {
+    margin-right: 16px
+}
