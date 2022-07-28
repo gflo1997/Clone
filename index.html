@@ -1,197 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <section id="landing">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treact Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="landing">
+    <div class="row">
       <nav>
-        <a class="Treact" href="#">
-          <img class="logo" src="./Assets/logo.2c489fc4.svg" alt="" />
-          Treact
-        </a>
-        <ul>
-          <li><a href="#" class="nav__link">About</a></li>
-          <li><a href="#" class="nav__link">Blog</a></li>
-          <li><a href="#" class="nav__link">Pricing</a></li>
-          <li><a href="#" class="nav__link">Contact Us</a></li>
-          <li><a href="#" class="nav__link nav__link--login">Login</a></li>
-          <li><a href="#" class="nav__link nav__link--signup">Sign Up</a></li>
-        </ul>
+        <div class="main__logo">
+          <a href=""><img class="logo" src="./Assets/logo.2c489fc4.svg" alt=""></a>
+          <a href=""><h1 class="treact">Treact</h1></a>
+        </div>
+        <div>
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li class="login"> <a href="">Login</a></li>
+            <li class="signup"> <a class="white" href="">Sign Up</a></li>
+          </ul>
+        </div>
       </nav>
-
-      <div class="header__container">
-        <div class="row">
-          <div class="left__column">
-            <h1 class="Header__title">
-              Beautiful React Templates <span class="purple">for you.</span>
-            </h1>
-            <h2 class="header__title--description">
-              Our templates are easy to setup, understand and customize. Fully
-              modular components with a variety of pages and components.
-            </h2>
-            <div class="email__input">
-              <input type="email" placeholder="Your E-mail Address" />
-              <button>Get Started</button>
-            </div>
-            <div class="customers">
-              <p>Our TRUSTED Customers</p>
-              <img
-                class="logo__strip"
-                src="./Assets/customers-logo-strip.680ac7c2.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="right__column">
-            <figure>
-              <img
-                class="illustration"
-                src="./Assets/design-illustration-2.6da6a00b.svg"
-                alt=""
-              />
-            </figure>
-          </div>
+    </div>
+  </section>
+  <section id="cover">
+    <div class="row">
+      <div class="left__column">
+        <h1 class="cover__title">Beautiful React Templates <span class="purple">for you.</span></h1>
+        <p class="cover__para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
+        <div class="email__input">
+          <input type="email" placeholder="Your E-mail Address">
+          <button class="getStartedButton">Get Started</button>
         </div>
+        <h3>OUR TRUSTED CUSTOMERS</h3>
+        <img class="customers_strip" src="./Assets/customers-logo-strip.680ac7c2.png" alt="">
       </div>
-    </section>
-
-    <section id="features">
-      <div class="features__container">
-        <div class="row__features">
-          <h1 class="features__title">FEATURES</h1>
-          <div></div>
-          <h2 class="features__description">
-            We have Amazing <span class="purple">Service.</span>
-          </h2>
-          <div></div>
-          <h3 class="features__para">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </h3>
-        </div>
-
-        <div class="spacer"></div>
-
-        <div class="feature__container">
-          <div class="feature__items">
-            <span class="feature__image">
-              <img class="features__logo" src="./Assets/Secure.svg" alt="" />
-            </span>
-            <span class="text_container">
-              <span class="feature__title">Secure</span>
-              <p class="description">
-                We strictly only deal with vendors that provide top notch
-                security.
-              </p>
-            </span>
-          </div>
-
-          <div class="feature__items">
-            <span class="feature__image">
-              <img class="features__logo" src="./Assets/24-7.svg" alt="" />
-            </span>
-            <span class="text_container">
-              <span class="feature__title">24/7 Support</span>
-              <p class="description">
-                Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis
-                nostrud.
-              </p>
-            </span>
-          </div>
-
-          <div class="feature__items">
-            <span class="feature__image">
-              <img class="features__logo" src="./Assets/Customizable.svg" alt="" />
-            </span>
-            <span class="text_container">
-              <span class="feature__title">Customizable</span>
-              <p class="description">
-                Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis
-                nostrud.
-              </p>
-            </span>
-          </div>
-
-          <div class="feature__items">
-            <span class="feature__image">
-              <img class="features__logo" src="./Assets/Reliable.svg" alt="" />
-            </span>
-            <span class="text_container">
-              <span class="feature__title">Reliable</span>
-              <p class="description">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellendus eum ea odio magni eligendi natus eaque sit pariatur
-                asperiores. Perferendis, dicta possimus nemo culpa id voluptatem
-                magnam qui ad voluptates?
-              </p>
-            </span>
-          </div>
-
-          <div class="feature__items">
-            <span class="feature__image">
-              <img class="features__logo" src="./Assets/Fast.svg" alt="" />
-            </span>
-            <span class="text_container">
-              <span class="feature__title">Fast</span>
-              <p class="description">
-                Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis
-                nostrud.
-              </p>
-            </span>
-          </div>
-
-          <div class="feature__items">
-            <span class="feature__image">
-              <img class="features__logo" src="./Assets/Easy.svg" alt="" />
-            </span>
-            <span class="text_container">
-              <span class="feature__title">Easy</span>
-              <p class="description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Delectus, cum? Placeat quas voluptates deserunt quibusdam rerum
-                facere iure, labore inventore, maiores temporibus ratione cumque
-                officiis, praesentium aut voluptate explicabo distinctio.
-              </p>
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="quality__work">
-      <div class="row--quality__work">
-        <div class="qe__left-column">
-          <h1 class="qw__title">QUALITY WORK</h1>
-          <h2 class="qw__description">
-            Designed & Developed by <span class="purple">Professionals.</span>
-          </h2>
-          <h3 class="qw__para">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </h3>
-          <button>Learn More</button>
-        </div>
-        <div class="qe__right-column">
-          <figure>
-            <img
-              class="hero__image"
-              src="./Assets/hero-screenshot-1.40a097b5.png"
-              alt=""
-            />
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section id="">
-
-    </section>
-  </body>
+    </div>
+  </section>
+</body>
 </html>
