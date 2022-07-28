@@ -73,8 +73,12 @@ ul {
 
 /* COVER */
 
+.columns {
+    display: flex;
+}
+
 .left__column {
-    width: 40%;
+    width: 40%
 }
 
 .purple {
@@ -82,14 +86,14 @@ ul {
 }
 
 .cover__title {
-    font-size: 2.25rem;
+    font-size: 48px;
     color: #243e63;
     font-weight: 700;
     line-height: 1.25;
 }
 
 .cover__para {
-    font-size: 1rem;
+    font-size: 24px;
     color: #243e63;
     margin-top: 2rem;
     margin-bottom: 2rem
@@ -102,12 +106,13 @@ ul {
     text-align: center;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 80px;
 }
 
 input {
     border: none;
     color: #243e63;
-    font-size: 1.2rem;
+    font-size: 20px;
     margin-left: 24px;
 }
 
@@ -115,6 +120,99 @@ input {
     padding: 24px 24px;
     background-color: rgba(100,21,255);
     border-radius: 60px;
-    font-size: 1.2rem;
+    font-size: 20px;
     font-weight: 700;
 }
+
+.ourTrustedCustomers {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.customers_strip {
+    width: 100%;
+    opacity: 0.5;
+    letter-spacing: 0.05em
+}
+
+.right__column {
+    width: 60%;
+}
+
+.right__column--img {
+    max-width: 100%;
+}
+
+/* FEATURES */
+
+.features__title {
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    color: rgba(100,21,255);
+
+}
+
+h2 {
+    font-size: 48px;
+    color: #243e63;
+    font-weight: 900;
+    margin: 20px 0;
+}
+
+.features__para {
+    font-size: 24px;
+    color: #707a88;
+    font-weight: 500;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+}
+
+.features__wrapper {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service {
+    display: flex;
+    width: calc(100%/3);
+    margin-bottom: 100px;
+}
+
+.service__description {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 36px;
+}
+
+.service__description--title {
+    font-size: 36px;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.service__para {
+    font-size: 24px;
+    color: #707a88;
+    font-weight: 500;
+    text-align: left;
+    margin: auto;
+}
+
+.service__img {
+    border: solid rgb(228, 225, 225) 1px;
+    border-radius: 100%;
+    border-radius: 100%;
+    padding: 16px 16px;
+    max-width: 60%;
+    max-height: 60%;
+}
+
