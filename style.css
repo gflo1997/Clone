@@ -181,6 +181,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 200px;
+    margin-right: 12px;
 }
 
 .service {
@@ -538,4 +539,48 @@ h2 {
     cursor: pointer;
     max-width: 60%;
     margin-bottom: 36px;
+}
+
+/* FOOTER */
+
+.footer__container {
+    background-color: rgba(100, 21, 255);
+    display: flex;
+}
+
+.footer__link-title {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer__column {
+    width: 20%;
+}
+
+.footer__ul {
+    display: inline-block; 
+	text-align: left; 
+}
+
+.footer__li {
+    font-weight: 500;
+    font-size: 0.875rem;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer__a {
+    cursor: pointer;
+    padding-bottom: 4px;
+    font-size: 14px;
+    color: #f7fafc;
+    transition: all ease-in-out 300ms;
+    margin-top: 10px;
+}
+
+.footer__links {
+    display: flex;
+    margin: 100px;
+    justify-content: space-around;
 }
