@@ -842,3 +842,14 @@ h2 {
         margin-bottom: 24px;
     }
 }
+
+@media (max-width: 768px) {
+    .value {
+        margin-top: 16px;
+        width: 100%;
+    }
+    
+    .footer__links {
+        align-items: flex-start;
+    }
+}
