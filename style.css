@@ -7,10 +7,27 @@
     color: #243e63;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+#landing, #cover, #features, #qualityWork, #steps, #values, #pricing {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
 .row {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 nav {
@@ -55,7 +72,10 @@ li {
 
 a {
     text-decoration: none;
-    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .signup {
@@ -72,10 +92,80 @@ ul {
     align-items: center;
 }
 
+.btn__menu {
+    background-color: transparent;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+    color: rgba(100,21,255);
+    display: none;
+}
+
+.menu__backdrop {
+    position: absolute;
+    background-color: #242424;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms ease;
+}
+
+.menu--open .menu__backdrop {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu--open {
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+.btn__menu--close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    color: white;
+}
+
+.fas {
+    color: rgba(100,21,255);
+}
+
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__link {
+    color: white;
+}
+
+.menu__list {
+    padding: 32px 0;
+    font-size: 40px;
+}
+
+.landingLink-550 {
+    font-size: 40px;
+    border-radius: 50px;
+    margin-top: 32px;
+}
+
 /* COVER */
 
 .columns {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 100px;
 }
 
@@ -175,6 +265,7 @@ h2 {
 .features__wrapper {
     padding: 80px 0;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .services {
@@ -647,4 +738,107 @@ h2 {
 .footer__svg {
     height: 1rem;
     width: 1rem;
+}
+
+@media (max-width: 768px){
+    .landingLink {
+        display: none;
+    }
+    .btn__menu {
+        display: block;
+    }
+    .service {
+        width: 100%;
+    }
+    
+    .columns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .steps__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;}
+    
+    .qualityWork__rightColumn {
+        margin-top: 36px;
+        width: 100%;
+        display: block;
+        flex-wrap: wrap;
+        margin: auto;
+        text-align: center;
+    }
+
+    .qualityWork__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .values__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__links {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .personal, .business, .enterprise {
+        display: block;
+        flex-wrap: wrap;
+        margin: auto;
+        text-align: center;
+    }
+
+    .email__input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+    }
+
+    input {
+        border: 4px solid #d8dadf;
+        border-radius: 60px;
+        padding: 10px 4px 10px 4px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+
+    .getStartedButton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .learnMoreButton {
+        margin-bottom: 16px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        margin: 24px auto;
+    }
+
+    .features__para {
+        margin-bottom: 24px;
+    }
+
+    .footer__links {
+        align-items: center;
+    }
+
+    .footer__column {
+        margin-bottom: 24px;
+    }
 }
